@@ -81,7 +81,23 @@
 									
 									Now, let's say we are going to collect 'company name', 'gvkey' and 'sales to cutomers' from the table <code>'wrds_seg_customer'</code> and the library <code>'comp'</code>
 									<span class="image fit"><img src="images/WRDS4.png" alt="" /></span>
-							
+									
+									Sometimes, it is just helpful to collect the required data. Let's say, we have a database taht shows companies and whether thay have twitter account or not.<br>
+									<span class="image fit"><img src="images/WRDS4.png" alt="" /></span>
+									Now, we are going to collect their 'sales', 'company name', and 'cusip' of these companies. <br><br><br>
+									
+									
+									First, we need to create a dictionary of tickers with the following format:
+									<span class="image fit"><img src="images/WRDS5.png" alt="" /></span>
+						
+									Once, we create that dictionary, we submit the job to wrds for colleccting those variables only for these companies and only
+									from January of 2010 till January of 2020. See the following picture:
+									span class="image fit"><img src="images/WRDS5.png" alt="" /></span>
+				
+									Once the data is collected, we may again merge two dataframes:
+									span class="image fit"><img src="images/WRDS5.png" alt="" /></span>
+									
+									So, this process can be applied to any other databases, the only thing you need to change is your wrds library and table.
 									<hr />
 									
 									<h2>Heading Level 2</h2>
