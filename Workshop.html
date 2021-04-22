@@ -139,12 +139,23 @@
 										
 		
 										<h3>2.2. Data Collection from Bloomberg by using xbbg</h3>
-		
 										
+										<li><b>Step 1</b>: Find the field</li> 
+										Let's say I want to find the revenue of Ford motors Co. from 2019-01-01 till 2020-12-30. So, I first type "revenue" in bloomberg terminal for finding the field asscoaied with the revenue. see the following picture
+										<span class="image fit"><img src="images/Bloomberg4.png" alt="" /></span>
+				
+										<li><b> Collecting Historical data</b>:</li> 
+										After finding the field, I use the syntax of <code>blp.bdh('tickers', field,override,start_date='YYYY-MM-DD', end_date='YYYY-MM-DD') </code>. <br>
+										'tickers': This is where you put tickers. Notice that tickers format in WRDS are differnt than Bloomberg. For example, the ticker of  Ford motors Co. in Bloomberg is 'F US Equity' but it 'F' in WRDS. <br>
+										See the following figure which shows revenue of Ford motors Co. from 2019-01-01 till 2020-12-30<br>
+										<span class="image fit"><img src="images/Bloomberg5.png" alt="" /></span>
 										
-				
-				
-									
+										<li><b>Collecting Non-historical Data</b>:</li> 
+										For non-historical data, we use <code>blp.bdp(tickers,fields)</code>
+										<span class="image fit"><img src="images/Bloomberg6.png" alt="" /></span>
+										
+										Likewise, we can send a list of tickers for collecting historical or non-historical data:
+										<span class="image fit"><img src="images/Bloomberg7.png" alt="" /></span>
 									<hr />
 						
 									<h2>Heading Level 2</h2>
