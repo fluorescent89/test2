@@ -111,18 +111,33 @@
 											<li> <a href="https://matthewgilbert.github.io/pdblp/tutorial.html" style="color: red"><u>Documentation</u></a></li>
 											
 										</p>
-										
+										<h3>Installation</h3>
 										<p>
 										<h4>2.2. xbbg</h4>	
 										You can find the installation and documetation <li> <a href="https://pypi.org/project/xbbg/" style="color: red"><u>here</u></a></li>. Since the installation is not very straightforward compared to wrds, we will do it here again. 
 										<li>Step 1: install xbbg<li> 
 										Run this code in your Anaconda terminal<code>pip install xbbg</code>
+										
 										<li>Step 2: install blpapi<li> 
 										Run this code in your Anaconda terminal<code>pconda install -c conda-forge blpapi</code>
-										<li>Step 3: Replace blpapi3_32.dll,etc<li> 
-										To do so, you need to login (this is only for the first time) and type 'WAPI' in Bloomberg terminal, as shown in the following picture:
+										
+										<li>Step 3: Replace <code>blpapi3_32.dll</code>,etc<li> 
+										To do so, you need to login (this is only for the first time) and type 'WAPI' in Bloomberg terminal, as shown in the following pictures:
+										
+										<span class="image fit"><img src="images/Bloomberg1.png" alt="" /></span>
+										<span class="image fit"><img src="images/Bloomberg2.png" alt="" /></span>
+										
+										Once you downloaded the file, you need to copy <code>blpapi3_32.dll</code> and <code>blpapi3_64.dll</code> under bin folder to Bloomberg BLPAPI_ROOT folder, normally blp/DAPI.
+										
+										<li>Step 4: Upload them in your Jupyter<li> 
 				
+										Done!
 										</p>
+										
+		
+										<h3>Data Collection</h3>
+		
+										
 										
 				
 				
